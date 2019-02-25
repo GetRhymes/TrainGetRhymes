@@ -1,6 +1,10 @@
 package com.getrhymes.train
 
 fun main(args: Array<String>) {
-    val auto = TrainSchedule("Her")
-    println(auto)
+
+    var newTrain = TrainSchedule(nameTrain = "N137", time = "14:35", station = "Arc")
+    println(newTrain.addTrain())
+    //println(newTrain.removeTrain())
+    println(newTrain.addStation())
+
 }
