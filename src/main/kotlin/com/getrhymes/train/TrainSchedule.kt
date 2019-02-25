@@ -1,6 +1,7 @@
 package com.getrhymes.train
 
-class TrainSchedule(val time: String, val  station: String, val  nameTrain: String) {
+class TrainSchedule(val time: String, val  station: String, val  nameTrain: String, val needStation: String,
+                     val timeNow: String) {
 
     private var train = mutableMapOf(
             "L131" to ("12:50" to "Pargolovo"),
@@ -9,9 +10,9 @@ class TrainSchedule(val time: String, val  station: String, val  nameTrain: Stri
             "J137" to ("10:49" to "Spb"))
 
     private val  listStation = mutableMapOf(
+            "N137" to mutableListOf("12:37" to "Finland", "14:39" to "London"),
             "L131" to mutableListOf("12:30" to "Pargolovo",  "12:40" to "Viborg"),
-            "N137" to mutableListOf("12:37" to "Finland", "14:35" to "London"),
-            "J137" to mutableListOf("9:49" to "Spb", "7:45" to "Pushkin"))
+            "J139" to mutableListOf("9:49" to "Spb", "7:45" to "Pushkin"))
 
     private val  nearestTrain = mutableMapOf(
             "Pargolovo" to mutableListOf("15:57" to "L145", "7:45" to "A532", "12:40" to "F413"  ),
@@ -56,23 +57,23 @@ class TrainSchedule(val time: String, val  station: String, val  nameTrain: Stri
                 val resultTime = "$timeHour:$timeMin"
                 remakeList.add(Pair(resultTime, value2))
             }
-            listStation[nameTrain] = remakeList
+            listStation[key] = remakeList
         }
         return listStation
     }
-    fun removeStation (name: String, station: String, time: String) {
-        listStation[name]!!.remove(Pair(time, station))
+    fun removeStation () {
+        listStation[nameTrain]!!.remove(Pair(time, station))
     }
-    fun searchTrain (nameStation: String, timeNow: String): Pair<String, String> {
+    fun searchTrain (): Pair<String, String> {
         var timeInMin1 = timeNow.split(":")
         val resultTimeNow = timeInMin1[0].toInt() * 60 + timeInMin1[1].toInt()
-        val trainAndTime = nearestTrain[nameStation]
-        var count = 10000000
+        val trainAndTime = nearestTrain[needStation]
+        var count = 1441
         var needTrain = Pair("", "")
         for (el in trainAndTime!!) {
             timeInMin1 = el.first.split(":")
             val resultTimeNeed =timeInMin1[0].toInt() * 60 + timeInMin1[1].toInt()
-            if (resultTimeNeed - resultTimeNow < count) {
+            if (resultTimeNeed - resultTimeNow in 1..(count - 1)) {
                 count = resultTimeNeed
                 needTrain = el
             }
