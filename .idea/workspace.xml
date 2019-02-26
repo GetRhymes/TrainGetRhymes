@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02ed31b1-757b-4bf5-9ae3-ca7b6a07f55b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/TrainSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/TrainSchedule.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt" afterDir="false" />
@@ -56,49 +58,49 @@
     <session id="659922780">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="1" />
           <entry key="jpg" value="2" />
-          <entry key="kt" value="2" />
+          <entry key="kt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
           <entry key="Image" value="2" />
-          <entry key="Kotlin" value="2" />
+          <entry key="Kotlin" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="26" />
-          <entry key="kt" value="4769" />
+          <entry key="kt" value="5260" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="26" />
-          <entry key="Kotlin" value="4769" />
+          <entry key="Kotlin" value="5260" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="85">
+              <caret line="5" column="29" selection-start-line="4" selection-start-column="33" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -106,8 +108,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="19" />
+            <state relative-caret-position="306">
+              <caret line="18" column="92" lean-forward="true" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+              <folding>
+                <element signature="e#29#93#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -539,8 +553,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt" />
       </list>
     </option>
   </component>
@@ -554,6 +569,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -587,15 +603,35 @@
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="train" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrainGetRhymes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrainGetRhymes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrainGetRhymes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="train" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551120878819" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551218923683" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/ideadir" />
   </component>
   <component name="RunDashboard">
@@ -610,60 +646,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.getrhymes.train.MainKt">
-    <configuration name="TrainGetRhymes [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.TestTrain.addTrainTest">
+    <configuration name="TestTrain.addStationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="train_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.getrhymes.train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.getrhymes.train" />
+      <option name="MAIN_CLASS_NAME" value="com.getrhymes.train.TestTrain" />
+      <option name="METHOD_NAME" value="addStationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TrainGetRhymes [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
+    <configuration name="TestTrain.addTrainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="train_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.getrhymes.train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.getrhymes.train" />
+      <option name="MAIN_CLASS_NAME" value="com.getrhymes.train.TestTrain" />
+      <option name="METHOD_NAME" value="addTrainTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TrainGetRhymes [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
+    <configuration name="TestTrain.removeStationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="train_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.getrhymes.train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.getrhymes.train" />
+      <option name="MAIN_CLASS_NAME" value="com.getrhymes.train.TestTrain" />
+      <option name="METHOD_NAME" value="removeStationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTrain.searchTrainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="train_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.getrhymes.train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.getrhymes.train" />
+      <option name="MAIN_CLASS_NAME" value="com.getrhymes.train.TestTrain" />
+      <option name="METHOD_NAME" value="searchTrainTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="com.getrhymes.train.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="train_main" />
@@ -680,16 +726,18 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.com.getrhymes.train.MainKt" />
-      <item itemvalue="Gradle.TrainGetRhymes [jar]" />
-      <item itemvalue="Gradle.TrainGetRhymes [clean]" />
-      <item itemvalue="Gradle.TrainGetRhymes [build]" />
+      <item itemvalue="JUnit.TestTrain.addStationTest" />
+      <item itemvalue="JUnit.TestTrain.removeStationTest" />
+      <item itemvalue="JUnit.TestTrain.searchTrainTest" />
+      <item itemvalue="JUnit.TestTrain.addTrainTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestTrain.addTrainTest" />
+        <item itemvalue="JUnit.TestTrain.searchTrainTest" />
         <item itemvalue="Kotlin.com.getrhymes.train.MainKt" />
-        <item itemvalue="Gradle.TrainGetRhymes [build]" />
-        <item itemvalue="Gradle.TrainGetRhymes [clean]" />
-        <item itemvalue="Gradle.TrainGetRhymes [jar]" />
+        <item itemvalue="JUnit.TestTrain.removeStationTest" />
+        <item itemvalue="JUnit.TestTrain.addStationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -706,6 +754,29 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestTrain_addTrainTest - 2019.02.27 at 00h 46m 01s.xml">
+      <configuration name="TestTrain.addTrainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain_removeTrainTest - 2019.02.27 at 00h 49m 29s.xml">
+      <configuration name="TestTrain.removeTrainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain_addStationTest - 2019.02.27 at 00h 54m 15s.xml">
+      <configuration name="TestTrain.addStationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain_addStationTest - 2019.02.27 at 00h 59m 11s.xml">
+      <configuration name="TestTrain.addStationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain_addStationTest - 2019.02.27 at 00h 59m 55s.xml">
+      <configuration name="TestTrain.addStationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain_removeStationTest - 2019.02.27 at 01h 03m 02s.xml">
+      <configuration name="TestTrain.removeStationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain_removeStationTest - 2019.02.27 at 01h 03m 20s.xml">
+      <configuration name="TestTrain.removeStationTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -719,7 +790,7 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09466019" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26860842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -728,7 +799,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" weight="0.3298731" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.3298731" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.50749713" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -763,17 +834,27 @@
     <entry file="file://$USER_HOME$/Desktop/хлам/17935-monochrome_mode-san_francisco_fog-bridge-water-london_bridge-1280x1024.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="19" />
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="4" selection-start-column="33" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="306">
+          <caret line="18" column="92" lean-forward="true" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+          <folding>
+            <element signature="e#29#93#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

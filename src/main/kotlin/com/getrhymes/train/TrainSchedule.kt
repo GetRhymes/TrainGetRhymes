@@ -3,7 +3,7 @@ package com.getrhymes.train
 class TrainSchedule(val time: String, val  station: String, val  nameTrain: String, val needStation: String,
                      val timeNow: String) {
 
-    private var train = mutableMapOf(
+    private val train = mutableMapOf(
             "L131" to ("12:50" to "Pargolovo"),
             "M132" to ("12:40" to "Viborg"),
             "N133" to ("12:37" to "Finland"),
@@ -20,14 +20,13 @@ class TrainSchedule(val time: String, val  station: String, val  nameTrain: Stri
 
     fun addTrain(): MutableMap<String, Pair<String, String>> {
         train[nameTrain] = Pair(time, station)
-        val mutMap = mutableMapOf<Int, Pair<String, String>>()
+        var mutMap = mutableMapOf<Int, Pair<String, String>>()
         for ((key, value) in train ) {
             val firstEl = value.first.split(":")
             val firstEl2 = firstEl[0].toInt() * 60 + firstEl[1].toInt()
             mutMap[firstEl2] = Pair(key, value.second)
         }
-        mutMap.toSortedMap()
-        train = mutableMapOf()
+        mutMap = mutMap.toSortedMap()
         for ((key1, value1) in mutMap) {
             val timeHour = key1 / 60
             val timeMin = key1  % 60
@@ -43,13 +42,13 @@ class TrainSchedule(val time: String, val  station: String, val  nameTrain: Stri
     fun addStation (): MutableMap<String, MutableList<Pair<String, String>>> {
         listStation[nameTrain]!!.add(Pair(time, station))
         for ((key, value) in listStation) {
-            val remakeMap = mutableMapOf<Int, String>()
+            var remakeMap = mutableMapOf<Int, String>()
             for (el in value) {
                 val timeCount = el.first.split(":")
                 val timeMinFull = timeCount[0].toInt() * 60 + timeCount[1].toInt()
                 remakeMap[timeMinFull] = el.second
             }
-            remakeMap.toSortedMap()
+            remakeMap = remakeMap.toSortedMap()
             val remakeList = mutableListOf<Pair<String, String>>()
             for ((key2, value2) in remakeMap) {
                 val timeHour = key2 / 60
@@ -61,8 +60,9 @@ class TrainSchedule(val time: String, val  station: String, val  nameTrain: Stri
         }
         return listStation
     }
-    fun removeStation () {
-        listStation[nameTrain]!!.remove(Pair(time, station))
+    fun removeStation (): MutableMap<String, MutableList<Pair<String, String>>> {
+            listStation[nameTrain]!!.remove(Pair(time, station))
+        return listStation
     }
     fun searchTrain (): Pair<String, String> {
         var timeInMin1 = timeNow.split(":")
