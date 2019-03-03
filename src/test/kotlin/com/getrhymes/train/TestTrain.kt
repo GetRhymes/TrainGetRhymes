@@ -6,50 +6,59 @@ import org.junit.Test
 class TestTrain {
     @Test
     fun addTrainTest () {
-        val newTrain = TrainSchedule(nameTrain = "N111", time = "14:35", station = "Arc", needStation = "Spb",
-                timeNow = "13:30")
+        val train = Train(nameTrain = "ff4", station = "Myr", time =  "11:48")
         assertEquals(mutableMapOf(
-                "L131" to ("12:50" to "Pargolovo"),
-                "M132" to ("12:40" to "Viborg"),
-                "N133" to ("12:37" to "Finland"),
-                "J137" to ("10:49" to "Spb"),
-                "N111" to ("14:35" to "Arc")), newTrain.addTrain())
+                "L131" to mutableMapOf("Pargolovo" to "12:50", "as" to "13:56", "bi" to "16:10", "vi" to "17:50"),
+                "M132" to mutableMapOf("Viborg" to "12:40", "hu" to "13:00", "ed" to "13:52", "ko" to "15:23"),
+                "N133" to mutableMapOf("Finland" to "12:37", "Spb" to "10:49", "Kir" to "11:45", "Mar" to "15:34"),
+                "J137" to mutableMapOf("Spb" to "10:50", "Kir" to "11:42", "lo" to "16:40"),
+                "A111" to mutableMapOf("Kir" to "11:43", "Mar" to "15:35", "LTD" to "16:23"),
+                "ff4" to mutableMapOf("Myr" to "11:48")),
+        train.addTrain(train.nameTrain, train.station, train.time))
     }
 
     @Test
     fun removeTrainTest() {
-        val oldTrain = TrainSchedule(nameTrain = "L131", time = "12:50", station = "Pargolovo", needStation = "Spb",
-                timeNow = "13:30" )
-        assertEquals(mutableMapOf(
-                "M132" to ("12:40" to "Viborg"),
-                "N133" to ("12:37" to "Finland"),
-                "J137" to ("10:49" to "Spb")), oldTrain.removeTrain())
+        val train3 = Train(nameTrain = "Pargolovo", station = "Myr", time =  "11:48")
+        assertEquals("L131" to mutableMapOf(
+                "M132" to mutableMapOf("Viborg" to "12:40", "hu" to "13:00", "ed" to "13:52", "ko" to "15:23"),
+                "N133" to mutableMapOf("Finland" to "12:37", "Spb" to "10:49", "Kir" to "11:45", "Mar" to "15:34"),
+                "J137" to mutableMapOf("Spb" to "10:50", "Kir" to "11:42", "lo" to "16:40"),
+                "A111" to mutableMapOf("Kir" to "11:43", "Mar" to "15:35", "LTD" to "16:23")),
+        train3.removeTrain(train3.nameTrain))
     }
 
     @Test
     fun addStationTest() {
-        val newStation = TrainSchedule(nameTrain = "N137", time = "14:35", station = "Arc", needStation = "Spb",
-                timeNow = "13:30")
+        val train = Train(nameTrain = "L131", station = "Myr", time =  "11:48")
         assertEquals(mutableMapOf(
-                "N137" to mutableListOf("12:37" to "Finland", "14:35" to "Arc", "14:39" to "London" ),
-                "L131" to mutableListOf("12:30" to "Pargolovo",  "12:40" to "Viborg"),
-                "J139" to mutableListOf("7:45" to "Pushkin", "9:49" to "Spb")), newStation.addStation())
+                "L131" to mutableMapOf("Pargolovo" to "12:50", "as" to "13:56", "bi" to "16:10", "vi" to "17:50",
+                        "Myr" to "11:48"),
+                "M132" to mutableMapOf("Viborg" to "12:40", "hu" to "13:00", "ed" to "13:52", "ko" to "15:23"),
+                "N133" to mutableMapOf("Finland" to "12:37", "Spb" to "10:49", "Kir" to "11:45", "Mar" to "15:34"),
+                "J137" to mutableMapOf("Spb" to "10:50", "Kir" to "11:42", "lo" to "16:40"),
+                "A111" to mutableMapOf("Kir" to "11:43", "Mar" to "15:35", "LTD" to "16:23")),
+        train.addStation(train.nameTrain, train.station, train.time))
     }
 
     @Test
     fun removeStationTest() {
-        val oldStation = TrainSchedule(nameTrain = "L131", time = "12:30", station = "Pargolovo",
-                needStation = "Spb", timeNow = "13:30")
+        val train = Train(nameTrain = "L131", station = "Pargolovo", time =  "12:50")
         assertEquals(mutableMapOf(
-                "N137" to mutableListOf("12:37" to "Finland", "14:39" to "London"),
-                "L131" to mutableListOf("12:40" to "Viborg"),
-                "J139" to mutableListOf("9:49" to "Spb", "7:45" to "Pushkin")), oldStation.removeStation())
+                "L131" to mutableMapOf("as" to "13:56", "bi" to "16:10", "vi" to "17:50",
+                        "Myr" to "11:48"),
+                "M132" to mutableMapOf("Viborg" to "12:40", "hu" to "13:00", "ed" to "13:52", "ko" to "15:23"),
+                "N133" to mutableMapOf("Finland" to "12:37", "Spb" to "10:49", "Kir" to "11:45", "Mar" to "15:34"),
+                "J137" to mutableMapOf("Spb" to "10:50", "Kir" to "11:42", "lo" to "16:40"),
+                "A111" to mutableMapOf("Kir" to "11:43", "Mar" to "15:35", "LTD" to "16:23")),
+               train.removeStation(train.station, train.nameTrain))
     }
 
     @Test
     fun searchTrainTest() {
-        val needStation = TrainSchedule(nameTrain = "L131", time = "12:30", station = "Pargolovo",
-                needStation = "Spb", timeNow = "12:55")
-        assertEquals(("12:57" to "G143"), needStation.searchTrain())
+        val needStation = "Mar"
+        val timeNow = "11:30"
+        val train2 = TrainSchedule(station = "Kir")
+        assertEquals(("A111" to "11:43"), train2.searchTrain(timeNow ,needStation, train2.station))
     }
 }
