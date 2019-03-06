@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Train.kt" line="9" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="02ed31b1-757b-4bf5-9ae3-ca7b6a07f55b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Train.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/train_main.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/train_main.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/Train.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/TrainSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/getrhymes/train/TrainSchedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/getrhymes/train/TestTrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/getrhymes/train/TestTrain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Train.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Train.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt" afterDir="false" />
     </list>
@@ -60,20 +62,23 @@
     <session id="659922780">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.36" value="3" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="1" />
+          <entry key="java" value="9" />
           <entry key="jpg" value="2" />
           <entry key="kt" value="4" />
         </counts>
@@ -82,19 +87,20 @@
         <counts>
           <entry key="Groovy" value="1" />
           <entry key="Image" value="2" />
+          <entry key="JAVA" value="9" />
           <entry key="Kotlin" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="26" />
-          <entry key="kt" value="9464" />
+          <entry key="kt" value="10159" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="26" />
-          <entry key="Kotlin" value="9464" />
+          <entry key="Kotlin" value="10159" />
         </counts>
       </usages-collector>
     </session>
@@ -102,28 +108,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Train.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            <state relative-caret-position="130">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -131,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+            <state relative-caret-position="425">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding>
                 <element signature="e#29#93#0" expanded="true" />
               </folding>
@@ -567,9 +555,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Train.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Train.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt" />
       </list>
     </option>
@@ -583,7 +571,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -642,11 +630,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551653400224" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551833294577" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/ideadir" />
   </component>
   <component name="RunDashboard">
@@ -661,8 +649,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestTrain.addTrainTest">
-    <configuration name="TestTrain.addStationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestTrain">
+    <configuration name="TestTrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="train_test" />
       <extension name="coverage">
         <pattern>
@@ -672,8 +660,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.getrhymes.train" />
       <option name="MAIN_CLASS_NAME" value="com.getrhymes.train.TestTrain" />
-      <option name="METHOD_NAME" value="addStationTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -741,18 +727,18 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.com.getrhymes.train.MainKt" />
-      <item itemvalue="JUnit.TestTrain.addStationTest" />
       <item itemvalue="JUnit.TestTrain.removeStationTest" />
       <item itemvalue="JUnit.TestTrain.searchTrainTest" />
       <item itemvalue="JUnit.TestTrain.addTrainTest" />
+      <item itemvalue="JUnit.TestTrain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestTrain" />
         <item itemvalue="JUnit.TestTrain.addTrainTest" />
         <item itemvalue="Kotlin.com.getrhymes.train.MainKt" />
         <item itemvalue="JUnit.TestTrain.searchTrainTest" />
         <item itemvalue="JUnit.TestTrain.removeStationTest" />
-        <item itemvalue="JUnit.TestTrain.addStationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -770,35 +756,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTrain_addTrainTest - 2019.02.27 at 00h 46m 01s.xml">
+    <history-entry file="TestTrain - 2019.03.06 at 03h 32m 16s.xml">
+      <configuration name="TestTrain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain - 2019.03.06 at 03h 34m 05s.xml">
+      <configuration name="TestTrain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain_addTrainTest - 2019.03.06 at 03h 34m 31s.xml">
       <configuration name="TestTrain.addTrainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTrain_removeTrainTest - 2019.02.27 at 00h 49m 29s.xml">
-      <configuration name="TestTrain.removeTrainTest" configurationId="JUnit" />
+    <history-entry file="TestTrain - 2019.03.06 at 03h 34m 34s.xml">
+      <configuration name="TestTrain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTrain_addStationTest - 2019.02.27 at 00h 54m 15s.xml">
-      <configuration name="TestTrain.addStationTest" configurationId="JUnit" />
+    <history-entry file="TestTrain - 2019.03.06 at 03h 35m 27s.xml">
+      <configuration name="TestTrain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTrain_addStationTest - 2019.02.27 at 00h 59m 11s.xml">
-      <configuration name="TestTrain.addStationTest" configurationId="JUnit" />
+    <history-entry file="TestTrain - 2019.03.06 at 03h 36m 30s.xml">
+      <configuration name="TestTrain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTrain_addStationTest - 2019.02.27 at 00h 59m 55s.xml">
-      <configuration name="TestTrain.addStationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestTrain_removeStationTest - 2019.02.27 at 01h 03m 02s.xml">
-      <configuration name="TestTrain.removeStationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestTrain_removeStationTest - 2019.02.27 at 01h 03m 20s.xml">
-      <configuration name="TestTrain.removeStationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestTrain_searchTrainTest - 2019.02.27 at 01h 08m 37s.xml">
-      <configuration name="TestTrain.searchTrainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestTrain_addTrainTest - 2019.02.27 at 01h 08m 41s.xml">
+    <history-entry file="TestTrain_addTrainTest - 2019.03.06 at 03h 43m 18s.xml">
       <configuration name="TestTrain.addTrainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTrain_addTrainTest - 2019.02.27 at 01h 08m 44s.xml">
+    <history-entry file="TestTrain - 2019.03.06 at 03h 43m 21s.xml">
+      <configuration name="TestTrain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain_addTrainTest - 2019.03.06 at 03h 46m 57s.xml">
       <configuration name="TestTrain.addTrainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTrain - 2019.03.06 at 03h 47m 03s.xml">
+      <configuration name="TestTrain" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -814,7 +800,7 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1512945" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15857606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -823,8 +809,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" weight="0.3298731" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.50749713" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4025375" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298731" />
@@ -858,31 +844,111 @@
     <entry file="file://$USER_HOME$/Desktop/хлам/17935-monochrome_mode-san_francisco_fog-bridge-water-london_bridge-1280x1024.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/junit/framework/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="67" />
+        <state relative-caret-position="244">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="221">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/Train.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        <state relative-caret-position="34">
+          <caret line="2" column="79" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/train/TrainSchedule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/notification/SynchronizedRunListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/Description.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="222" selection-start-line="222" selection-end-line="222" />
+          <folding>
+            <element signature="e#9086#9087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/notification/Failure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="e#1696#1697#0" expanded="true" />
+            <element signature="e#1731#1732#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/EachTestNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/notification/RunNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2093#2094#0" expanded="true" />
+            <element signature="e#2233#2246#0" expanded="true" />
+            <element signature="e#2313#2322#0" expanded="true" />
+            <element signature="e#4348#4349#0" expanded="true" />
+            <element signature="e#4408#4409#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/train/TestTrain.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        <state relative-caret-position="425">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
             <element signature="e#29#93#0" expanded="true" />
           </folding>

@@ -1,13 +1,13 @@
 package com.getrhymes.train
 
-class TrainSchedule(val station: String) {
+private var schedule = mutableMapOf(
+        "L131" to mutableMapOf("Pargolovo" to "12:50", "as" to "13:56", "bi" to "16:10", "vi" to "17:50"),
+        "M132" to mutableMapOf("Viborg" to "12:40", "hu" to "13:00", "ed" to "13:52", "ko" to "15:23"),
+        "N133" to mutableMapOf("Finland" to "12:37", "Spb" to "10:49", "Kir" to "11:45", "Mar" to "15:34"),
+        "J137" to mutableMapOf("Spb" to "10:50", "Kir" to "11:42", "lo" to "16:40"),
+        "A111" to mutableMapOf("Kir" to "11:43", "Mar" to "15:35", "LTD" to "16:23"))
 
-    private var schedule = mutableMapOf(
-            "L131" to mutableMapOf("Pargolovo" to "12:50", "as" to "13:56", "bi" to "16:10", "vi" to "17:50"),
-            "M132" to mutableMapOf("Viborg" to "12:40", "hu" to "13:00", "ed" to "13:52", "ko" to "15:23"),
-            "N133" to mutableMapOf("Finland" to "12:37", "Spb" to "10:49", "Kir" to "11:45", "Mar" to "15:34"),
-            "J137" to mutableMapOf("Spb" to "10:50", "Kir" to "11:42", "lo" to "16:40"),
-            "A111" to mutableMapOf("Kir" to "11:43", "Mar" to "15:35", "LTD" to "16:23"))
+class TrainSchedule(val station: String) {
 
       private fun scheduleForStation(station: String): MutableMap<String, MutableMap<String, String>> {
         val haveNeedStation = mutableMapOf<String, MutableMap<String, String>>()
@@ -16,6 +16,16 @@ class TrainSchedule(val station: String) {
                 haveNeedStation[key] = value
         }
         return haveNeedStation
+    }
+
+    fun addTrain(nameTrain: String, listStation: MutableMap<String, String>): MutableMap<String, MutableMap<String, String>> {
+        schedule[nameTrain] = listStation
+        return schedule
+    }
+
+    fun removeTrain(nameTrain: String): MutableMap<String, MutableMap<String, String>> {
+        schedule.remove(nameTrain)
+        return schedule
     }
 
     fun searchTrain(timeNow: String, needStation: String, stationNow: String): Pair<String, String> {
