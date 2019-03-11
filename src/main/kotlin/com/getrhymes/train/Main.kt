@@ -7,14 +7,14 @@ fun main(args: Array<String>) {
     val needStation = "Mar"
     val timeNow = "11:30"
     val train2 = TrainSchedule(station = "Kir")
-    println(train2.addTrain(train.nameTrain, train.listStation))
+    println(train2.addTrain(train))
     println()
-    println(train2.removeTrain(train3.nameTrain))
+    println(train2.removeTrain(train3))
     println()
     println(train.addStation(train3.station, train3.time))
     println()
     println(train.removeStation(train.station))
     println()
-    println(train2.searchTrain(timeNow ,needStation, train2.station))
+    println(train2.searchTrain(timeNow ,needStation, train2))
     println()
 }

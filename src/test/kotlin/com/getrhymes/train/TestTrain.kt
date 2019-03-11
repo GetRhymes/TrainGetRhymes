@@ -19,7 +19,7 @@ class TestTrain {
                 "N133" to mutableMapOf("Finland" to "12:37", "Spb" to "10:49", "Kir" to "11:45", "Mar" to "15:34"),
                 "J137" to mutableMapOf("Spb" to "10:50", "Kir" to "11:42", "lo" to "16:40"),
                 "A111" to mutableMapOf("Kir" to "11:43", "Mar" to "15:35", "LTD" to "16:23")),
-                schedule.removeTrain(train.nameTrain))
+                schedule.removeTrain(train))
     }
 
     @Test
@@ -38,7 +38,7 @@ class TestTrain {
                 "J137" to mutableMapOf("Spb" to "10:50", "Kir" to "11:42", "lo" to "16:40"),
                 "A111" to mutableMapOf("Kir" to "11:43", "Mar" to "15:35", "LTD" to "16:23"),
                 "FF4" to mutableMapOf("Myr" to "11:48")),
-        schedule.addTrain(train.nameTrain, train.listStation))
+        schedule.addTrain(train))
     }
 
     @Test
@@ -68,6 +68,23 @@ class TestTrain {
         val needStation = "Mar"
         val timeNow = "11:30"
         val train2 = TrainSchedule(station = "Kir")
-        assertEquals(("A111" to "11:43"), train2.searchTrain(timeNow ,needStation, train2.station))
+        assertEquals(("A111" to "11:43"), train2.searchTrain(timeNow ,needStation, train2))
+    }
+    @Test
+    fun DaniilSergeevich () {
+       val train = Train(nameTrain = "111", station = "C", time = "14:40", listStation = mutableMapOf(
+               "A" to "11:40",
+               "B" to "12:50"))
+       val schedule = TrainSchedule(station = "A")
+        val timeNow = "10:30"
+        println(schedule.addTrain(train))
+        println()
+        println(train.addStation(train.station, train.time))
+        println()
+        println(schedule.searchTrain(timeNow, train.station, schedule))
     }
 }
+//1. Создаём поезд (станция А). listOfStations = listOf(Б)
+//2. Добавляем этот поезд в расписание
+//3. Добавляем этому поезду станцию C
+//4. Ищем в вашем расписании маршут от А до С (время не важно)
