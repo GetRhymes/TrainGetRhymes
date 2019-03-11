@@ -32,14 +32,14 @@ class TrainSchedule(val station: String) {
         val timeInMin1 = timeNow.split(":")
         val resultTimeNow = timeInMin1[0].toInt() * 60 + timeInMin1[1].toInt()
         val needSt = scheduleForStation(stationNow)
-        var count = 1441
+        var maxTimeValue = 24 * 60 + 1  //максимальное кол-во минут которое может быть
         var countResult = Pair("", 0)
         for ((key, value) in needSt) {
             val timeListDep = value[stationNow]!!.split(":")
             val timeInMinDep = timeListDep[0].toInt() * 60 + timeListDep[1].toInt()
             if (needStation in value)
-                if (timeInMinDep - resultTimeNow in 1..(count - 1))
-                    count = timeInMinDep - resultTimeNow
+                if (timeInMinDep - resultTimeNow in 1..(maxTimeValue - 1))
+                    maxTimeValue = timeInMinDep - resultTimeNow
                     countResult = Pair(key, timeInMinDep)
         }
         val timeInHour = countResult.second / 60
